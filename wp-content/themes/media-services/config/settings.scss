@@ -16,4 +16,17 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: auto;
+
+    @include lg {
+        max-width: 960px;
+    }
+
+    @include md {
+        max-width: 720px;
+    }
+
+    @include sm {
+        max-width: none;
+        padding: 0 15px;
+    }
 }
