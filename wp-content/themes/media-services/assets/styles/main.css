@@ -26,9 +26,77 @@ body {
   font-size: 16px;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
   margin: auto;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: none;
+    padding: 0 15px;
+  }
+}
+
+.logo {
+  display: flex;
+}
+.logo__wrapper {
+  display: flex;
+  align-items: center;
+}
+.logo__link {
+  text-decoration: none;
+}
+.logo__image {
+  margin-right: 8px;
+}
+.logo__text {
+  color: #171717;
+  font-weight: bold;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.social__list {
+  display: flex;
+  align-items: center;
+}
+.social__item {
+  margin-right: 20px;
+}
+.social__item:last-child {
+  margin-right: 0;
+}
+
+.header {
+  background-color: #FFFFFF;
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 /*# sourceMappingURL=main.css.map*/
