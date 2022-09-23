@@ -37,28 +37,30 @@ $front_page_id = get_option('page_on_front');
                     <li class="menu__item">About</li>
                 </ul>
             </nav>
-            <?php if( have_rows('header_social', $front_page_id) ): ?>
-            <div class="header__social social">
-                <ul class="social__list">
-                <?php
-                while( have_rows('header_social', $front_page_id) ): the_row();
-                    $icon = get_sub_field('icon');
-                ?>
-                    <li class="social__item">
-                        <a href="<?php the_sub_field('link'); ?>" class="social__link">
-                            <img src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>" class="social__icon">
-                        </a>
-                    </li>
-                <?php endwhile; ?>
-                </ul>
-            </div>
-            <?php endif; ?>
-            <div class="header__lang">
+            <div class="header__right">
+                <?php if( have_rows('header_social', $front_page_id) ): ?>
+                <div class="header__social social">
+                    <ul class="social__list">
+                    <?php
+                    while( have_rows('header_social', $front_page_id) ): the_row();
+                        $icon = get_sub_field('icon');
+                    ?>
+                        <li class="social__item">
+                            <a href="<?php the_sub_field('link'); ?>" class="social__link">
+                                <img src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>" class="social__icon">
+                            </a>
+                        </li>
+                    <?php endwhile; ?>
+                    </ul>
+                </div>
+                <?php endif; ?>
+                <div class="header__lang">
 
-            </div>
-            <div class="header__login">
+                </div>
+                <div class="header__login">
 
-            </div>
+                </div>
+            </div>            
         </div>
     </div>    
 </header>

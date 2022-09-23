@@ -79,6 +79,12 @@ img {
 .menu__list {
   display: flex;
 }
+.menu__item {
+  margin-right: 50px;
+}
+.menu__item:last-child {
+  margin-right: 0;
+}
 
 .social__list {
   display: flex;
