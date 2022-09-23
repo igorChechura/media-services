@@ -57,9 +57,7 @@ $front_page_id = get_option('page_on_front');
                 <div class="header__lang">
 
                 </div>
-                <div class="header__login">
-
-                </div>
+                <a href="#" class="header__login button">Log in</a href="#">
             </div>            
         </div>
     </div>    

@@ -97,6 +97,30 @@ img {
   margin-right: 0;
 }
 
+.button {
+  display: inline-block;
+  padding: 9px 40px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 130%;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #1749B3;
+  border: 1px solid #1749B3;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover {
+  background-color: #FFFFFF;
+  color: #171717;
+}
+.button:active {
+  background-color: #4B84FD;
+  color: #FFFFFF;
+  border-color: #4B84FD;
+}
+
 .header {
   background-color: #FFFFFF;
 }
@@ -104,5 +128,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.header__right {
+  display: flex;
+  align-items: center;
 }
 /*# sourceMappingURL=main.css.map*/
