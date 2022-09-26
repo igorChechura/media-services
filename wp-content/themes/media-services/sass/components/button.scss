@@ -22,4 +22,21 @@
         color: $white;
         border-color: $active_blue;
     }
+
+    &--light {
+        background-color: $white;
+        border: 1px solid $white;
+        color: $blue;
+
+        &:hover {
+            background-color: $blue;
+            color: $white;
+        }
+
+        &:active {
+            background-color: $active_blue;
+            color: $white;
+            border-color: $active_blue;
+        }
+    }
 }
