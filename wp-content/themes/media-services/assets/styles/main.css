@@ -26,9 +26,161 @@ body {
   font-size: 16px;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
   margin: auto;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: none;
+    padding: 0 15px;
+  }
+}
+
+.logo {
+  display: flex;
+}
+.logo__wrapper {
+  display: flex;
+  align-items: center;
+}
+.logo__link {
+  text-decoration: none;
+}
+.logo__image {
+  margin-right: 8px;
+}
+.logo__text {
+  color: #171717;
+  font-weight: bold;
+}
+
+.menu__list {
+  display: flex;
+}
+.menu__item {
+  margin-right: 50px;
+}
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.social__list {
+  display: flex;
+  align-items: center;
+}
+.social__item {
+  margin-right: 15px;
+}
+.social__item:last-child {
+  margin-right: 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 9px 40px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 130%;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #1749B3;
+  border: 1px solid #1749B3;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover {
+  background-color: #FFFFFF;
+  color: #171717;
+}
+.button:active {
+  background-color: #4B84FD;
+  color: #FFFFFF;
+  border-color: #4B84FD;
+}
+.button--light {
+  background-color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  color: #1749B3;
+}
+.button--light:hover {
+  background-color: #1749B3;
+  color: #FFFFFF;
+}
+.button--light:active {
+  background-color: #4B84FD;
+  color: #FFFFFF;
+  border-color: #4B84FD;
+}
+
+.header {
+  background-color: #FFFFFF;
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+}
+.header__social {
+  margin-right: 40px;
+}
+
+.hero__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero__text {
+  width: 49%;
+  padding: 114px 60px;
+  background-color: #1749B3;
+  border-radius: 32px;
+}
+.hero__title {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+.hero__desc {
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+.hero__image {
+  width: 49%;
+}
+
+.front-page {
+  padding: 120px 0;
 }
 /*# sourceMappingURL=main.css.map*/

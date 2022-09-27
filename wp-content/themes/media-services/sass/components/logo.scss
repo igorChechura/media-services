@@ -1,0 +1,21 @@
+.logo {
+    display: flex;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__image {
+        margin-right: 8px;
+    }
+
+    &__text {
+        color: $black2;
+        font-weight: bold;
+    }
+}
