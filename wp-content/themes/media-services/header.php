@@ -1,6 +1,3 @@
-<?php 
-$front_page_id = get_option('page_on_front');
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,8 +10,8 @@ $front_page_id = get_option('page_on_front');
     <div class="container">
         <div class="header__wrapper">
             <?php
-            $logo = get_field('logo_image', $front_page_id);
-            if(!empty( $logo ) || get_field('logo_text', $front_page_id)):
+            $logo = get_field('logo_image', 'option');
+            if(!empty( $logo ) || get_field('logo_text', 'option')):
             ?>
             <div class="header__logo logo">
                 <a href="#" class="logo__link">
@@ -22,8 +19,8 @@ $front_page_id = get_option('page_on_front');
                         <?php if( !empty( $logo ) ): ?>
                         <img class="logo__image" src="<?php echo esc_url($logo['url']); ?>" alt="<?php echo esc_attr($logo['alt']); ?>">
                         <?php endif; ?>
-                        <?php if( get_field('logo_text', $front_page_id) ): ?>
-                        <div class="logo__text"><?php the_field('logo_text', $front_page_id); ?></div>
+                        <?php if( get_field('logo_text', 'option') ): ?>
+                        <div class="logo__text"><?php the_field('logo_text', 'option'); ?></div>
                         <?php endif; ?>
                     </div>                    
                 </a>
@@ -38,11 +35,11 @@ $front_page_id = get_option('page_on_front');
                 </ul>
             </nav>
             <div class="header__right">
-                <?php if( have_rows('header_social', $front_page_id) ): ?>
+                <?php if( have_rows('header_social', 'option') ): ?>
                 <div class="header__social social">
                     <ul class="social__list">
                     <?php
-                    while( have_rows('header_social', $front_page_id) ): the_row();
+                    while( have_rows('header_social', 'option') ): the_row();
                         $icon = get_sub_field('icon');
                     ?>
                         <li class="social__item">
